@@ -188,4 +188,145 @@ h2 {
     transform: scale(1);
     content: "Telegram";
   }
+}
+.network_button_animego:link, .network_button_animego:visited, .network_button_animego:active {
+  width: 80px;
+  height: 30px;
+  background: white;
+  padding: 10px 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  color: black;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+}
+.network_button_animego:hover {
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.141);
+}
+.network_button_animego::after {
+  content: "";
+  background: top url(/IMG/anime.webp);
+  background-size: 100%;
+  width: 80px;
+  height: 30px;
+  box-sizing: border-box;
+  display: inline-block;
+  z-index: 1;
+  position: absolute;
+  top: 13px;
+  left: -1px;
+  transform: scale(1, 0.1);
+  border: 1px solid #000000;
+  transition: all 0.3s ease;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.network_button_animego:hover::after {
+  content: "";
+  top: 0px;
+  padding: 10px 0px 0px 0px;
+  transition: all 0.5s ease;
+  color: white;
+  -webkit-animation: button_anime 0.4s ease-out 0.5s;
+          animation: button_anime 0.4s ease-out 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes button_anime {
+  0% {
+    transform: scale(1, 0.1);
+  }
+  100% {
+    transform: scale(1);
+    content: "ANIMEGO";
+  }
+}
+
+@keyframes button_anime {
+  0% {
+    transform: scale(1, 0.1);
+  }
+  100% {
+    transform: scale(1);
+    content: "ANIMEGO";
+  }
+}
+.network_button_upwork:link, .network_button_upwork:visited, .network_button_upwork:active {
+  width: 80px;
+  height: 30px;
+  background: white;
+  padding: 10px 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  color: black;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+}
+.network_button_upwork:hover {
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.141);
+}
+.network_button_upwork::after {
+  content: "";
+  background: rgb(111, 219, 66);
+  background-size: 100%;
+  width: 80px;
+  height: 30px;
+  box-sizing: border-box;
+  display: inline-block;
+  z-index: 1;
+  position: absolute;
+  top: 13px;
+  left: -1px;
+  transform: scale(1, 0.1);
+  transition: all 0.3s ease;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.network_button_upwork:hover::after {
+  content: "";
+  top: 0px;
+  padding: 10px 0px 0px 0px;
+  transition: all 0.5s ease;
+  color: white;
+  -webkit-animation: button_upwork 0.4s ease-out 0.5s;
+          animation: button_upwork 0.4s ease-out 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes button_upwork {
+  0% {
+    transform: scale(1, 0.1);
+  }
+  50% {
+    background: center url(/IMG/1200px-Upwork-logo.svg.png) white;
+    background-size: 100%;
+  }
+  100% {
+    transform: scale(1);
+    content: "";
+    background: center url(/IMG/1200px-Upwork-logo.svg.png) white;
+    background-size: 100%;
+  }
+}
+
+@keyframes button_upwork {
+  0% {
+    transform: scale(1, 0.1);
+  }
+  50% {
+    background: center url(/IMG/1200px-Upwork-logo.svg.png) white;
+    background-size: 100%;
+  }
+  100% {
+    transform: scale(1);
+    content: "";
+    background: center url(/IMG/1200px-Upwork-logo.svg.png) white;
+    background-size: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

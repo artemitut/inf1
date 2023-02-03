@@ -1,6 +1,8 @@
 @keyframes button_upwork {
     0% {
       transform: scale(1, 0.1);
+      background: center url(../IMG/1200px-Upwork-logo.svg.png) white;
+      background-size: 100%;
     }
     50% {
       background-image: url(../IMG/1200px-Upwork-logo.svg.png) white;
@@ -15,6 +17,7 @@
 @-webkit-keyframes button_upwork {
     0% {
         transform: scale(1, 0.1);
+        
     }
     90% {
         background-image: url(../IMG/1200px-Upwork-logo.svg.png) white;
@@ -31,6 +34,9 @@
 @-webkit-keyframes button_anime {
   0% {
     transform: scale(1, 0.1);
+    content: "ANIMEGO";
+    background: top url(../IMG/anime.webp);
+    background-size: 100%;
   }
   90% {
     background-image: url(../IMG/anime.webp) white;
@@ -47,6 +53,9 @@
 @keyframes button_anime {
   0% {
     transform: scale(1, 0.1);
+    content: "ANIMEGO";
+    background: top url(../IMG/anime.webp);
+    background-size: 100%;
   }
   90% {
     background-image: url(../IMG/anime.webp) white;

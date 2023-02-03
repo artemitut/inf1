@@ -207,7 +207,7 @@ h2 {
 }
 .network_button_animego::after {
   content: "";
-  background: top url(/IMG/anime.webp);
+  background: black;
   background-size: 100%;
   width: 80px;
   height: 30px;
